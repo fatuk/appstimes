@@ -1,13 +1,33 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Project</title>
-	<link rel="stylesheet" href="css/all.css"></head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/all.css">
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
 <body>
-	<div class="container">
-		<header class="site-header">
-			<div class="logo"></div>
+	<header class="site-header">
+		<div class="container">
+			<div class="logo">
+				<ul class="logo__list">
+					<li class="logo__item">
+						<i class="logo__img logo__img_first"></i>
+					</li>
+					<li class="logo__item">
+						<i class="logo__img logo__img_second"></i>
+					</li>
+					<li class="logo__item">
+						<i class="logo__img logo__img_third"></i>
+					</li>
+				</ul>
+			</div>
 
 			<nav class="menu">
 				<ul class="menu__list">
@@ -17,70 +37,137 @@
 					<li class="menu__item">
 						<a href="#" class="menu__link">Приложения</a>
 					</li>
+					<li class="menu__item">
+						<a href="#" class="menu__link">О проекте</a>
+					</li>
 				</ul>
 			</nav>
 
 			<div class="languages">
 				<ul class="languages__list">
 					<li class="languages__item">
-						<a href="#" class="languages__link active">Все</a>
+						<a href="#" class="languages__link">Все</a>
 					</li>
 					<li class="languages__item">
 						<a href="#" class="languages__link active">Рус</a>
 					</li>
+					<li class="languages__item">
+						<a href="#" class="languages__link">Рус</a>
+					</li>
 				</ul>
 			</div>
-		</header>
+		</div>
+	</header>
 
+	<div class="container">
 		<div class="desc">
 			<article class="article">
 				<p class="article__text">
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, minus saepe consectetur quo rerum qui consequuntur perspiciatis quia exercitationem cumque. Perferendis repudiandae ratione fugit deserunt magnam. Eos, quasi nihil nam.
+					<a href="http://appstimes.ru" class="article__link">Appstimes.ru</a> - <span class="grey-bg">это web-версия популярного новостного приложения <strong>Apps</strong>. На сайте публикуются обзоры ios-приложений от популярных российских и зарубежных порталов.</span>
 				</p>
 			</article>
 		</div>
 		
-		<div class="about">
-			<div class="hr-block">
-				<h1 class="hr-bloc__title">Apps - это...</h1>
-			</div>
+		<div class="hr-block">
+			<h1 class="hr-block__title"><strong>Apps</strong> - это...</h1>
+		</div>
 
+	</div>
+
+	<div class="about">
+
+		<div class="container">
 			<div class="about__info">
-				<img src="#" alt="" class="phone-img">
-				<div class="install-desc">
-					Самый большой каталог обзоров
+				<p class="install-desc">
+					Самый большой каталог обзоров и приложений в Рунете со <strong>120&nbsp;000</strong> читателей
+				</p>
+				<i class="iphone"></i>
+				<a href="#" class="btn btn-lg btn-default install-btn">Установить</a>
+				<p class="remark">Разработано для iPhone и iPad</p>
+
+				<div class="presentation">
+					<a href="#" class="presentation__link">
+						<i class="presentation__img"></i>
+						Презентация проекта
+					</a>
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<div class="container">
 
 		<div class="benefits">
 			<ul class="benefits__list">
 				<li class="benefits__item">
-					<img src="#" alt="" class="benefit-img">
+					<i class="benefit-img benefit-img_reviews"></i>
 					<h2 class="benefit-title">Обзоры ведущих порталов</h2>
-					<h3 class="benefit-subhead">Хотите стать нашим партнером?</h3>
+					<h3 class="benefit-subtitle">Хотите стать нашим партнером?</h3>
+					<a class="benefit-mailto" href="mailto:appstimes@test.ru">Напишите нам</a>
+				</li>
+				<li class="benefits__item">
+					<i class="benefit-img benefit-img_search"></i>
+					<h2 class="benefit-title">Первоклассный поисковой механизм</h2>
+					<h3 class="benefit-subtitle">Поиск по самой обширной базе обзоров и приложений Рунета</h3>
+				</li>
+				<li class="benefits__item">
+					<i class="benefit-img benefit-img_rating"></i>
+					<h2 class="benefit-title">Рейтинг обзоров и приложений</h2>
+					<h3 class="benefit-subtitle">Новаторская система рейтинга и цитируемости</h3>
+				</li>
+			</ul>
+
+			<ul class="benefits__list benefits__list_last">
+				<li class="benefits__item">
+					<i class="benefit-img benefit-img_fresh"></i>
+					<h2 class="benefit-title">Свежая информация о скидках и акциях</h2>
+					<h3 class="benefit-subtitle">Возможность поделиться с друзьями в соц. сетях. Избранное</h3>
+				</li>
+				<li class="benefits__item">
+					<i class="benefit-img benefit-img_updates"></i>
+					<h2 class="benefit-title">Ежечасное обновление</h2>
+					<h3 class="benefit-subtitle">Пуш-уведомления помогут всегда быть в курсе новинок</h3>
 				</li>
 			</ul>
 		</div>
 
 		<article class="article">
 			<p class="article__text">
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut, magni, in, harum officiis ea expedita autem voluptates voluptas ab rerum id fugit officia a dolores illum molestias temporibus consequatur quas.
+				<span class="grey-bg">
+					В <strong>Apps</strong> каждый находит что-то интересное для себя:
+				</span>
 			</p>
+
 			<ul class="article__list">
-				<li class="article__item">qwerty</li>
-				<li class="article__item">qwerty</li>
-				<li class="article__item">qwerty</li>
+				<li class="article__list__item">
+					<i class="article-bullet article-bullet_first"></i>
+					Будьте в курсе новинок и обновлений App Store, читая ежедневные <strong>новости и обзоры</strong>,
+				</li>
+				<li class="article__list__item">
+					<i class="article-bullet article-bullet_second"></i>
+					Узнавайте первым и <strong>скидках и распродажах</strong>,
+				</li>
+				<li class="article__list__item">
+					<i class="article-bullet article-bullet_third"></i>
+					Находите качественные, полноценные публикации со скриншотами и видео обзорами от <strong>ведущих порталов планеты</strong>,
+				</li>
+				<li class="article__list__item">
+					<i class="article-bullet article-bullet_fouth"></i>
+					Делитесь с друзьями полезной информацией с помощью <strong>Вконтакте, Фейсбука</strong> и <strong>Твиттера</strong>.
+				</li>
 			</ul>
 		</article>
 
-		<footer class="footer">
-			<p class="footer__text">Мы открыты новым идеям и предложениям.</p>
-			<p class="footer__text">Пишите по любым вопросам:</p>
-			<div class="footer__email">
-				<a href="mailto" class="footer__email__link">project@appsfor.me</a>
-			</div>
-		</footer>
 	</div>
+
+	<footer class="footer">
+		<div class="container">
+			<p class="footer__text">Мы открыты новым идеям и предложениям.</p>
+			<p class="footer__text footer__text_small">Пишите по любым вопросам:</p>
+			<div class="footer__mailto">
+				<a href="mailto" class="footer__mailto__link">project@appsfor.me</a>
+			</div>
+		</div>
+	</footer>
 </body>
 </html>

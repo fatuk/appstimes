@@ -32,7 +32,8 @@ module.exports = function (grunt) {
                 options: {
                     port: 8000,
                     base: '',
-                    keepalive: false
+                    keepalive: false,
+                    hostname: null
                 }
             }
         },
@@ -49,7 +50,7 @@ module.exports = function (grunt) {
                 options: {
                     livereload: true
                 },
-                files: ['*.html', 'css/**']
+                files: ['css/**']
             }
         }
         //------------------------------------------------------------
